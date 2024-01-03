@@ -1,1 +1,1 @@
-Ne pas oublier d'ajouter le répertoire vendor qui contient l'autoload, ainsi que de modifier la ligne consacrée à la BDD dans le fichier env
+Ne pas oublier de rajouter les fichiers additionnels qui ne sont pas push : https://github.com/ErosPhil/fichiers_additionnels_projetPW
