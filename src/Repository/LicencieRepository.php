@@ -21,6 +21,14 @@ class LicencieRepository extends ServiceEntityRepository
         parent::__construct($registry, Licencie::class);
     }
 
+    public function listeLicencies()
+    {
+        $qb = $this->createQueryBuilder('l');
+        $query = $qb->getQuery();
+        $results = $query->getResult();
+        return $results;
+    }
+
 //    /**
 //     * @return Licencie[] Returns an array of Licencie objects
 //     */

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block projet_body %}
+    <h1>Tableau des licenciés</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Numéro</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for licencie in lesLicencies %}
+                <tr {% if loop.index is even %} class="bg-light" {% endif %}>
+                    <td>{{licencie.id}}</td>
+                    <td>{{licencie.nom}}</td>
+                    <td>{{licencie.prenom}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock %}

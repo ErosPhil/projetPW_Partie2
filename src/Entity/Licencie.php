@@ -20,10 +20,10 @@ class Licencie
     private ?string $prenom = null;
 
     #[ORM\Column(length: 255)]
-    private ?Categorie $id_categorie = null;
+    private ?string $id_categorie = null;
 
     #[ORM\Column(length: 255)]
-    private ?Contact $id_contact = null;
+    private ?string $id_contact = null;
 
     public function getId(): ?int
     {
